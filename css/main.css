@@ -1,0 +1,192 @@
+.mt-1 {
+  margin-top: 100px; }
+
+body {
+  height: 100%;
+  margin: 10px 100px;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.5; }
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px; }
+  header nav .nav-links a {
+    text-decoration: none;
+    padding-right: 50px;
+    color: #262626; }
+  header nav .nav-links a:hover {
+    color: #737373; }
+  header nav .nav-links a:last-child {
+    padding-right: 0; }
+
+main .main-header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 70px; }
+
+main .main-text {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  font-size: 0.8rem;
+  color: gray; }
+
+main .main-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 100px;
+  margin-top: 200px; }
+  main .main-section h2 {
+    font-size: 1.7rem; }
+  main .main-section .reviews {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px; }
+    main .main-section .reviews .review-text {
+      color: gray; }
+    main .main-section .reviews .review-author {
+      font-size: 1rem;
+      margin: 10px 0; }
+    main .main-section .reviews div:first-child {
+      border-bottom: 1px solid #bfbfbf; }
+  main .main-section .user-video img {
+    margin-bottom: 25px; }
+
+.middle-header {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 150px; }
+
+.big-header {
+  text-align: center;
+  font-size: 3rem; }
+
+.instructors {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  margin: auto; }
+  .instructors p {
+    margin: 0; }
+  .instructors .instructor-name {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px; }
+    .instructors .instructor-name a {
+      text-decoration: none;
+      color: inherit; }
+  .instructors .student-count {
+    text-align: center;
+    font-size: 0.9rem;
+    color: green; }
+
+.blog-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 100px; }
+
+.blogs {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  margin: auto; }
+  .blogs .text-block {
+    padding-left: 75px;
+    padding-top: 50px; }
+  .blogs .text-block-reverse {
+    padding-right: 75px;
+    padding-top: 50px; }
+  .blogs p, .blogs h3 {
+    margin: 0; }
+  .blogs .blog-header {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 20px; }
+  .blogs .blog-text {
+    color: #4d4d4d; }
+  .blogs .blog-button {
+    display: block;
+    margin-top: 50px;
+    color: #0d0d0d;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #bfbfbf;
+    width: 150px;
+    text-align: center;
+    padding: 10px 5px; }
+  .blogs .blog-button:hover {
+    color: #fff;
+    background: #595959; }
+
+.enroll-button {
+  display: block;
+  color: #0d0d0d;
+  text-decoration: none;
+  border: 1px solid #333333;
+  width: 150px;
+  text-align: center;
+  padding: 10px 5px;
+  margin: 60px auto; }
+
+.enroll-button:hover {
+  color: #fff;
+  background: gray; }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px; }
+  footer p {
+    margin: 0; }
+  footer .site-name {
+    font-weight: bold;
+    font-size: 1.2rem; }
+  footer .text-grey {
+    color: gray; }
+  footer div:nth-child(2) {
+    margin-top: auto; }
+
+@media (max-width: 768px) {
+  body {
+    margin: 10px 20px; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; }
+    header nav .logo {
+      padding-right: 10px; }
+    header nav .nav-links {
+      display: flex; }
+      header nav .nav-links a {
+        padding-right: 10px; }
+  main .main-section {
+    display: block; }
+  main .main-text {
+    text-align: justify;
+    width: 250px;
+    margin: auto;
+    font-size: 0.8rem;
+    color: gray; }
+  main .main-video img {
+    width: 300px; }
+  .instructors {
+    display: block;
+    text-align: center;
+    width: 300px; }
+    .instructors .student-count {
+      margin-bottom: 25px; }
+  .blog-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 100px; }
+  .blogs {
+    display: block;
+    width: 350px; }
+    .blogs img {
+      width: 300px; }
+    .blogs .text-block, .blogs .text-block-reverse {
+      padding-left: 0;
+      padding-top: 0; }
+    .blogs .blog-button {
+      margin-bottom: 25px; } }
